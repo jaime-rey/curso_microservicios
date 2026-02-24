@@ -1,18 +1,21 @@
 package dev.jaimerey.accounts;
 
+import dev.jaimerey.accounts.dto.AccountsContactInfoDto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 
 @SpringBootApplication
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
+@EnableConfigurationProperties(value = AccountsContactInfoDto.class)
 @OpenAPIDefinition(
     info = @io.swagger.v3.oas.annotations.info.Info(
         title = "Accounts microservice REST API Documentation",
         version = "v1.0",
-        description = "EazyBank Accounts microservice REST API documentation",
+        description = "Banca Rey Accounts microservice REST API documentation",
         contact = @io.swagger.v3.oas.annotations.info.Contact(
             name = "Jaime Rey",
             email = "jaimereycasado@gmail.com"
