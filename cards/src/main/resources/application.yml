@@ -10,6 +10,8 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password: ''
+  config:
+    import: optional:configserver:http://localhost:8071
   h2:
     console:
       enabled: true
@@ -24,9 +26,6 @@ spring:
     username: "guest"
     password: "guest"
   cloud:
-    config:
-      uri: http://localhost:8071
-      fail-fast: false
     bus:
       enabled: true
 
