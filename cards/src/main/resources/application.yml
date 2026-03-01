@@ -27,7 +27,7 @@ spring:
     password: "guest"
   cloud:
     bus:
-      enabled: true
+      enabled: false
 
 
 management:
