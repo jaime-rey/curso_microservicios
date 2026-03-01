@@ -30,7 +30,7 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 )
 public class AccountsApplication {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(AccountsApplication.class, args);
     }
 

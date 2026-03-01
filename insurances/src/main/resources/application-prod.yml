@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+insurances:
+  message: "Welcome to Banca Rey insurances related prod APIs"
+  contactDetails:
+    name: "Jaime Rey - Developer"
+    email: "jaime@bancarey.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
+
