@@ -26,6 +26,9 @@ spring:
     username: "guest"
     password: "guest"
   cloud:
+    config:
+      uri: http://localhost:8071
+      fail-fast: false
     bus:
       enabled: true
 
